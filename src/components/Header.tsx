@@ -4,8 +4,7 @@ import { Search } from 'lucide-react';
 export default function Header() {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-2">
+        <div className="text-foreground mx-[20px] text-xl font-bold">OpenRouter<div className="flex items-center gap-2">
             <div className="text-foreground mx-[20px] text-xl font-bold">OpenRouter</div>
           </div>
           
