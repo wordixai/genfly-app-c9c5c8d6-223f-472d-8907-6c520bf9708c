@@ -1,22 +1,17 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
-
 export default function Header() {
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="text-xl font-bold text-foreground">OpenRouter</div>
+            <div className="text-foreground mx-[20px] text-xl font-bold">OpenRouter</div>
           </div>
           
           <div className="relative hidden md:block">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input 
-              placeholder="Search" 
-              className="w-64 pl-10 bg-muted/50"
-            />
+            <Input placeholder="Search" className="w-64 pl-10 bg-muted/50" />
           </div>
         </div>
         
@@ -29,6 +24,5 @@ export default function Header() {
           <Button variant="outline" size="sm">Sign in</Button>
         </nav>
       </div>
-    </header>
-  );
+    </header>;
 }
